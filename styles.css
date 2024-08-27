@@ -70,18 +70,21 @@ h1 {
 
 /* Toggle Switch Styles */
 .toggle-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
-    margin-right: 10px;
+    width: 40px;  /* Smaller width */
+    height: 20px;  /* Smaller height */
+    margin-left: 10px;
 }
 
 .switch input {
@@ -99,16 +102,16 @@ h1 {
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    border-radius: 34px;
+    border-radius: 20px;  /* Smaller border-radius */
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 14px;  /* Smaller height */
+    width: 14px;  /* Smaller width */
+    left: 3px;
+    bottom: 3px;
     background-color: white;
     transition: .4s;
     border-radius: 50%;
@@ -119,7 +122,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(20px);
 }
 
 .toggle-label {
@@ -130,41 +133,42 @@ input:checked + .slider:before {
 /* Old School Style */
 body.old-school {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #b2b2b2;
-    color: #000;
+    background-color: #000;
+    color: #0f0;
     padding: 10px;
     margin: 0;
 }
 
 .old-school .faq-container {
-    background-color: #fff;
-    border: 2px solid #000;
+    background-color: #000;
+    border: 2px solid #00ff00;
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
     padding: 0;
+    color: #00ff00;
 }
 
 .old-school h1 {
     font-size: 24px;
     text-align: left;
-    color: #0000FF;
-    background-color: #CCCCCC;
+    color: #ff00ff;
+    background-color: #0000ff;
     padding: 5px;
     margin: 0;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #00ff00;
 }
 
 .old-school .faq-item {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #00ff00;
     padding: 5px;
 }
 
 .old-school .faq-question h3 {
     margin: 0;
     font-size: 18px;
-    color: #0000FF;
-    background-color: #CCCCCC;
+    color: #00ff00;
+    background-color: #000;
     padding: 5px;
     cursor: pointer;
 }
@@ -173,8 +177,9 @@ body.old-school {
     display: none;
     font-size: 14px;
     padding: 10px;
-    background-color: #FFFFFF;
-    border-top: 1px dashed #000;
+    background-color: #000;
+    color: #ff00ff;
+    border-top: 1px dashed #00ff00;
 }
 
 .old-school .faq-item.active .faq-answer {
