@@ -17,6 +17,7 @@ body {
     max-width: 600px;
     width: 100%;
     padding: 20px;
+    position: relative;
 }
 
 h1 {
@@ -70,8 +71,8 @@ h1 {
 
 /* Toggle Switch Styles */
 .toggle-container {
-    position: fixed;
-    bottom: 20px;
+    position: absolute; /* Change to absolute */
+    bottom: -30px; /* Adjust as needed to position below the container */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
