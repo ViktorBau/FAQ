@@ -70,7 +70,7 @@ h1 {
 
 /* Toggle Switch Styles */
 .toggle-container {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
